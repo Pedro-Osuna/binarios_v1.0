@@ -1,0 +1,177 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Control de teclas con jquery</title>
+        <link href="./css/jquery-ui.css" type="text/css" rel="stylesheet"/>
+        <link href="./css/binarios.css" type="text/css" rel="stylesheet"/>
+        <script src="./jquery/jquery-3.5.1.js"></script>
+        <script src="./jquery/jquery-ui.js"></script>
+        <script src="./js/teclas.js" type="text/javaScript"></script>
+        <script src="./js/funciones.js" type="text/javaScript"></script>
+        <script src="./js/binarios.js" type="text/javaScript"></script>
+        <script src="./js/array_posibles.js" type="text/javaScript"></script>
+        <script type="text/javaScript"></script>
+        <script></script>
+    </head>
+    <body>
+        <text id="reloj" rows="1" cols="10" name="num_posi" readonly ></text><br>
+        <form id="entradas" action="" method="post">
+            <div id="div_sudoku">
+                <form>
+                    <input type="text" maxlength="1" id="00">
+                    <input type="text" maxlength="1" id="01">
+                    <input type="text" maxlength="1" id="02">
+                    <input type="text" maxlength="1" id="03">
+                    <input type="text" maxlength="1" id="04">
+                    <input type="text" maxlength="1" id="05">
+                    <input type="text" maxlength="1" id="06">
+                    <input type="text" maxlength="1" id="07">
+                    <input type="text" maxlength="1" id="08">
+                    <input type="text" maxlength="1" id="09">
+                    <input type="text" maxlength="1" id="10">
+                    <input type="text" maxlength="1" id="11">
+                    <input type="text" maxlength="1" id="12">
+                    <input type="text" maxlength="1" id="13">
+                    <input type="text" maxlength="1" id="14">
+                    <input type="text" maxlength="1" id="15">
+                    <input type="text" maxlength="1" id="16">
+                    <input type="text" maxlength="1" id="17">  
+                    <input type="text" maxlength="1" id="18">
+                    <input type="text" maxlength="1" id="19">
+                    <input type="text" maxlength="1" id="20">
+                    <input type="text" maxlength="1" id="21">
+                    <input type="text" maxlength="1" id="22">
+                    <input type="text" maxlength="1" id="23">
+                    <input type="text" maxlength="1" id="24">
+                    <input type="text" maxlength="1" id="25">
+                    <input type="text" maxlength="1" id="26">
+                    <input type="text" maxlength="1" id="27">
+                    <input type="text" maxlength="1" id="28">
+                    <input type="text" maxlength="1" id="29"> 
+                    <input type="text" maxlength="1" id="30">
+                    <input type="text" maxlength="1" id="31">
+                    <input type="text" maxlength="1" id="32">
+                    <input type="text" maxlength="1" id="33">
+                    <input type="text" maxlength="1" id="34">
+                    <input type="text" maxlength="1" id="35">
+                    <input type="text" maxlength="1" id="36">
+                    <input type="text" maxlength="1" id="37">
+                    <input type="text" maxlength="1" id="38">
+                    <input type="text" maxlength="1" id="39">
+                    <input type="text" maxlength="1" id="40">
+                    <input type="text" maxlength="1" id="41">
+                    <input type="text" maxlength="1" id="42">
+                    <input type="text" maxlength="1" id="43">
+                    <input type="text" maxlength="1" id="44">
+                    <input type="text" maxlength="1" id="45">
+                    <input type="text" maxlength="1" id="46">
+                    <input type="text" maxlength="1" id="47">  
+                    <input type="text" maxlength="1" id="48">
+                    <input type="text" maxlength="1" id="49">
+                    <input type="text" maxlength="1" id="50">
+                    <input type="text" maxlength="1" id="51">
+                    <input type="text" maxlength="1" id="52">
+                    <input type="text" maxlength="1" id="53">
+                    <input type="text" maxlength="1" id="54">
+                    <input type="text" maxlength="1" id="55">
+                    <input type="text" maxlength="1" id="56">  
+                    <input type="text" maxlength="1" id="57">
+                    <input type="text" maxlength="1" id="58">
+                    <input type="text" maxlength="1" id="59">
+                    <input type="text" maxlength="1" id="60">
+                    <input type="text" maxlength="1" id="61">
+                    <input type="text" maxlength="1" id="62">
+                    <input type="text" maxlength="1" id="63">
+                    <input type="text" maxlength="1" id="64">
+                    <input type="text" maxlength="1" id="65">
+                    <input type="text" maxlength="1" id="66">
+                    <input type="text" maxlength="1" id="67">
+                    <input type="text" maxlength="1" id="68">
+                    <input type="text" maxlength="1" id="69">
+                    <input type="text" maxlength="1" id="70">
+                    <input type="text" maxlength="1" id="71">
+                    <input type="text" maxlength="1" id="72">
+                    <input type="text" maxlength="1" id="73">
+                    <input type="text" maxlength="1" id="74">
+                    <input type="text" maxlength="1" id="75">
+                    <input type="text" maxlength="1" id="76">
+                    <input type="text" maxlength="1" id="77">
+                    <input type="text" maxlength="1" id="78">
+                    <input type="text" maxlength="1" id="79">
+                    <input type="text" maxlength="1" id="80">
+                    <input type="text" maxlength="1" id="81">
+                    <input type="text" maxlength="1" id="82">
+                    <input type="text" maxlength="1" id="83">
+                    <input type="text" maxlength="1" id="84">
+                    <input type="text" maxlength="1" id="85">
+                    <input type="text" maxlength="1" id="86">
+                    <input type="text" maxlength="1" id="87">
+                    <input type="text" maxlength="1" id="88">
+                    <input type="text" maxlength="1" id="89">
+                    <input type="text" maxlength="1" id="90">
+                    <input type="text" maxlength="1" id="91">
+                    <input type="text" maxlength="1" id="92">
+                    <input type="text" maxlength="1" id="93">
+                    <input type="text" maxlength="1" id="94">
+                    <input type="text" maxlength="1" id="95">
+                    <input type="text" maxlength="1" id="96">
+                    <input type="text" maxlength="1" id="97">
+                    <input type="text" maxlength="1" id="98">
+                    <input type="text" maxlength="1" id="99">
+                </form>
+            </div>    
+            <div id="cosa">
+                <label><u>Que está, o ha pasado:</u><br></label>
+                <textarea id="comen" name="comentarios" rows="2" cols="40" disabled > </textarea>
+            </div> 
+            <div id="colores">
+                <label>Celdas de ayuda color de fondo:</label></br></br>
+                <label>Celdas componiendo color de fondo:</label></br></br>
+                <label>Celdas iniciales color de fondo:</label>
+                <div id="fondos">
+                    <input type="textayu" maxlength="1" readonly></br>
+                    <input type="textcomp" maxlength="1" readonly></br>
+                    <input type="textini" maxlength="1"  readonly>
+                </div>
+            </div>
+            <div id="dat_ini" title="Celdas iniciales">
+                <textarea id="mod" rows="4" cols="40" disabled > </textarea>
+                <center><label><u>mínimo 20 máximo 40</u></label></center>
+                <input id="ini" type="number" name="celdas_iniciales" min="20" max="50" step="1" value="26">
+            </div>
+
+            <div id="comp_ini" title="Validar/Borrar">
+                <textarea id="comp_mod" rows="4" cols="40" disabled > </textarea>
+            </div>
+            <div id="botones">
+                <input type="submit" id = "inicio" class="boton" name="inicio" value="Poner a inicio" onclick="poner_a_inicio()"/>
+                <input type="submit" id = "entrar" class="boton" name="entrar" value="Entrar valores a mano" onclick="binario_a_mano()"/>
+                <input type="submit" id = "generar" class="boton" name="generar" value="Generar valores aleatoriamente"/>
+                <input type="submit" id = "celda_ale" class="boton" name="celda" value="Ayuda celda aleatoria" disabled="true" onclick="ayuda_celda_aleatoria()"/>
+                <input type="submit" id = "celda_act" class="boton" name="celda_activa" value="Ayuda celda activa" disabled="true" onclick="ayuda_celda_activa()"/>
+                <input type="submit" id = "compruebo_celdas" class="boton" name= "comp_celdas" value="Comprobar celdas iniciales" disabled="true" onclick="comprobar_celdas_iniciales()"/> 
+                <input type="submit" id = "compongo_binario" class="boton" name= "compongo_binario" value="Componer" disabled="true"/>
+                <input type="submit" id = "resuelvo"  class="boton" name= "resolver" value="Resolver binario" disabled="true" onclick="resolver_binario()"/>
+                <input type="submit" id = "comprobar" class="boton" name="comprobar" value="Verificar solucion binario" onclick="comprobamos_solucion()"/>
+            </div>
+            <div id="crono">
+                <label><u>Tiempo</u></label>
+                <input type="hor" maxlength="2" id="horas" readonly/>
+                <label> : </label>
+                <input type="hor" maxlength="2" id="minutos" readonly/>
+                <label> : </label>
+                <input type="hor" maxlength="2" id="segundos" readonly/>
+                <input type="submit" id = "reiniciar" class="boton1" name="reiniciar" value="Reanudar"
+                onclick="inicio_crono()"/>
+                <input type="submit" id = "pausa" class="boton1" name="pausa" value="Pausa" onclick="para_crono()"/>
+            </div>
+            <div id="explicacion">
+                <textarea id="exp" class="TextoExp" rows="" cols="" disabled > </textarea>
+            </div>
+        </form>
+    </body>
+</html>
+
+
+
+
